@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    background: black;
+}
