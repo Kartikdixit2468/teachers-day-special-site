@@ -25,7 +25,7 @@ app.engine('handlebars', exphbs.engine({
   }));
   
   app.set('view engine', 'handlebars');
-  app.set('views', 'views'); // directory where your view templates are stored
+  app.set('views', path.join(__dirname, 'views')); // directory where your view templates are stored
   
 
 app.use('/', main_routes)
