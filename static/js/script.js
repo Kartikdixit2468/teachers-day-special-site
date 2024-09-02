@@ -2,8 +2,10 @@
 
 function displayDeveloper() {
   const header = document.getElementsByTagName("header")[0];
+  const spider = document.getElementById("spiderman");
 
   header.classList.toggle("show-author");
+  spider.classList.toggle("hide");
 
   return 0;
 }
@@ -13,10 +15,10 @@ document
   .addEventListener("click", displayDeveloper);
 
 const images = [
-    "../images/yd_sir/2.png",
-    "../images/yd_sir/1.png",
-    "../images/yd_sir/3.jpg",
     "../images/yd_sir/4.jpg",
+    "../images/yd_sir/3.jpg",
+    "../images/yd_sir/1.png",
+    "../images/yd_sir/2.png",
 ];
 
 const cardElements = document.getElementsByClassName("img-cards");

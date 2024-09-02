@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 
 * {
   margin: 0px;
@@ -10,7 +11,7 @@ body {
   background: url("../images/iron_man/tony-stark.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   max-height: 100vh;
 }
 body::before {
@@ -96,6 +97,9 @@ header::before{
     height: 100vh;
     background-color: #0E0E26;
     color: #FFFF;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 3rem;
     top: 0;
     left: 0;
@@ -109,7 +113,9 @@ header::before{
     opacity: 0; /* Start fully visible */
     visibility: hidden; /* Start visible */
 }
-
+.hide{
+    visibility: hidden;
+}
 .show-author::before {
     visibility: visible;
     opacity: 1;
