@@ -14,11 +14,17 @@
     height: 13.62em;
     width: 0.15em;
     background-color: #ffffff;
-    animation: swing 5s infinite;
+    animation: swing 10s infinite;
   }
   
   @keyframes swing {
+    25%{
+      transform: translateY(-0em);
+    }
     50% {
+      transform: translateY(-4em);
+    }
+    75%{
       transform: translateY(-4em);
     }
   }
