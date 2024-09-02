@@ -13,9 +13,9 @@ document
   .addEventListener("click", displayDeveloper);
 
 const images = [
-    "../images/yd_sir/3.jpg",
-    "../images/yd_sir/1.png",
     "../images/yd_sir/2.png",
+    "../images/yd_sir/1.png",
+    "../images/yd_sir/3.jpg",
     "../images/yd_sir/4.jpg",
 ];
 

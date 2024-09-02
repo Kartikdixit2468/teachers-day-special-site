@@ -25,7 +25,6 @@ body::before {
   z-index: -99;
 }
 header {
-  /* border: 5px solid white; */
   position: relative;
   padding: 5px 25px 0px 25px;
   height: 10vh;
@@ -36,8 +35,6 @@ section{
     overflow-x: hidden;
     visibility: visible;
     z-index: -9;
-    /* opacity: 1; */
-    /* transition: opacity 1s ease, visibility 1s ease; */
 }
 
 .logo img {
@@ -47,13 +44,11 @@ section{
 .left-content {
   min-width: 35vw;
   height: 85vh;
-  /* align-items: center; */
 }
 .right-content {
   min-width: 75vw;
   max-height: 75vh;
   align-items: center;
-  /* justify-content: center; */
 }
 #name-space {
   width: 16vw;
@@ -87,7 +82,6 @@ section{
   margin-left: 25px;
 }
 .img-cards{
-    /* background-image: url(../images/iron_man/1696951835-Iron-man-short_hires.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,7 +96,7 @@ header::before{
     height: 100vh;
     background-color: #0E0E26;
     color: #FFFF;
-    font-size: xx-large;
+    font-size: 3rem;
     top: 0;
     left: 0;
     height: 100vh;
@@ -120,7 +114,6 @@ header::before{
     visibility: visible;
     opacity: 1;
 }
-
 
 @keyframes glow {
   0% {
