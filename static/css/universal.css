@@ -1,0 +1,71 @@
+/* :root {
+  --body-bg: #f5f1ed;
+  --nav-bg1: #f79256; 
+  --nav-bg2: #ffd400; 
+  --home-sec-bg: #f9edcc;
+  --navbar-tabs: #000;
+  --active-tabs-bottom-border: #ea2d1f;
+  --news-bar-bg1: #f8bb21;
+  --news-bar-bg2: #ea2b1f;
+  --search-btn-bg: #f18812;
+  --search-btn-bg-hover: #e38d2a;
+} */
+.flex {
+    display: flex;
+  }
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-sp-btw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+  .infront {
+    z-index: 999;
+  }
+  .inbehind {
+    z-index: -999;
+  }
+  .btn {
+    cursor: pointer;
+    color: #ffffff;
+    outline: none;
+    box-shadow: none;
+  }
+  .h-100{
+    height: 100vh;
+  }
+  .w-100{
+    width: 100vh;
+  }
+
+
+  
+  .btn-colour {
+    background-color: var(--search-btn-bg) !important;
+    color: #fff;
+  }
+  .bg-colour {
+    background-color: var(--body-bg);
+  }
+  .secondary-bg-colour {
+    background-color: var(--home-sec-bg);
+  }
+  .border-red {
+    border: 2px solid red;
+  }
+  .border-yellow {
+    border: 2px solid rgb(255, 255, 0);
+  }
+  .border-black {
+    border: 2px solid black;
+  }
+  .border-green {
+    border: 2px solid green;
+  }
