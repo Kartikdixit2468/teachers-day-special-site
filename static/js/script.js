@@ -2,10 +2,10 @@
 
 function displayDeveloper() {
   const header = document.getElementsByTagName("header")[0];
-  const spider = document.getElementById("spiderman");
+  // const spider = document.getElementById("spiderman");
 
   header.classList.toggle("show-author");
-  spider.classList.toggle("hide");
+  // spider.classList.toggle("hide");
 
   return 0;
 }
