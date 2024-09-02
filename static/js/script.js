@@ -13,10 +13,10 @@ document
   .addEventListener("click", displayDeveloper);
 
 const images = [
-  "../images/iron_man/wp4310352.jpg",
-  "../images/iron_man/tony-stark.jpg",
-  "../images/iron_man/8496aad050d37804e7c097979597f4d3.png",
-  "../images/iron_man/blob.jpeg",
+    "../images/iron_man/8496aad050d37804e7c097979597f4d3.png",
+    "../images/iron_man/tony-stark.jpg",
+    "../images/iron_man/blob.jpeg",
+    "../images/iron_man/wp4310352.jpg",
 ];
 
 const cardElements = document.getElementsByClassName("img-cards");
