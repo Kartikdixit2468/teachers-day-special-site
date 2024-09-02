@@ -87,7 +87,7 @@ section{
   margin-left: 25px;
 }
 .img-cards{
-    background-image: url(../images/iron_man/1696951835-Iron-man-short_hires.jpg);
+    /* background-image: url(../images/iron_man/1696951835-Iron-man-short_hires.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
