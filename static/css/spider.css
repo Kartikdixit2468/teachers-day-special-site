@@ -14,7 +14,7 @@
     height: 13.62em;
     width: 0.15em;
     background-color: #ffffff;
-    animation: swing 2s infinite;
+    animation: swing 5s infinite;
   }
   
   @keyframes swing {
