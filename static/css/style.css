@@ -26,16 +26,23 @@ body::before {
 }
 header {
   /* border: 5px solid white; */
-  padding: 0px 25px 0px 25px;
+  position: relative;
+  padding: 5px 25px 0px 25px;
   height: 10vh;
+  z-index: 99;
+  transition: opacity 1s ease, visibility 1s ease;
 }
 section{
     overflow-x: hidden;
+    visibility: visible;
+    z-index: -9;
+    /* opacity: 1; */
+    /* transition: opacity 1s ease, visibility 1s ease; */
 }
 
 .logo img {
-  width: 97px;
-  height: 85px;
+  width: 95px;
+  height: 82px;
 }
 .left-content {
   min-width: 35vw;
@@ -43,9 +50,10 @@ section{
   /* align-items: center; */
 }
 .right-content {
-  min-width: 70vw;
-  min-height: 30vh;
-  overflow-x: hidden;
+  min-width: 75vw;
+  max-height: 75vh;
+  align-items: center;
+  /* justify-content: center; */
 }
 #name-space {
   width: 16vw;
@@ -57,7 +65,6 @@ section{
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid white;
   max-height: 25%;
   justify-content: center;
 }
@@ -75,13 +82,45 @@ section{
   -webkit-text-stroke: 1.5px #ff0099;
   animation: glow 1.5s infinite alternate;
 }
-#greeting-container {
-    border: 3px solid yellow;
-}
 #greeting-container img {
   height: 65vh;
   margin-left: 25px;
 }
+.img-cards{
+    background-image: url(../images/iron_man/1696951835-Iron-man-short_hires.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 30px;
+    width: 22vw;
+    min-height: 38vh;
+    border-radius: 35px;
+}
+header::before{
+    content: "Made by Kartik Dixit with ❤️.";
+    position: absolute;
+    height: 100vh;
+    background-color: #0E0E26;
+    color: #FFFF;
+    font-size: xx-large;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition for opacity and visibility */
+    opacity: 0; /* Start fully visible */
+    visibility: hidden; /* Start visible */
+}
+
+.show-author::before {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 @keyframes glow {
   0% {
