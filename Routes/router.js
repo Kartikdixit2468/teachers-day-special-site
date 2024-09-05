@@ -1,12 +1,15 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  res.render('home')
+router.get("/:teacher", (req, res) => {
+  res.render('home', {
+    teacher: req.params.teacher,
+  })
+
 });
 
-router.get("/home", (req, res) => {
-  res.send("Hello Home!");
+router.get("/hello/:teacher", (req, res) => {
+  res.send(`Hello! ${req.params.teacher}`);
 });
 
 module.exports = router;

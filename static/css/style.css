@@ -8,11 +8,13 @@
 
 body {
   position: relative;
-  background: url("../images/iron_man/tony-stark.jpg");
+  /* background: url("../images/iron_man/tony-stark.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-height: 100vh;
+  transition: background-image 2s ease-in-out, opacity 1s ease-in-out; /* Smooth fade animation */
+  overflow: hidden;
 }
 body::before {
   position: absolute;
@@ -25,6 +27,7 @@ body::before {
   opacity: 60%;
   z-index: -99;
 }
+
 header {
   position: relative;
   padding: 5px 25px 0px 25px;
@@ -33,9 +36,21 @@ header {
   transition: opacity 1s ease, visibility 1s ease;
 }
 section{
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     visibility: visible;
     z-index: -9;
+    /* max-height: 90vh; */
+}
+#preloader{
+  position:fixed;
+  height: 100vh;
+  width: 100%;
+  background: #0C0C1D url('../images/teachersdat3-gif.gif');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1px;
+  z-index: 100;
 }
 
 .logo img {
@@ -43,12 +58,14 @@ section{
   height: 82px;
 }
 .left-content {
+  /* position: fixed; */
   min-width: 35vw;
   height: 85vh;
 }
 .right-content {
+  /* position: fixed; */
   min-width: 75vw;
-  max-height: 75vh;
+  /* max-height: 75vh; */
   align-items: center;
 }
 #name-space {
@@ -61,7 +78,7 @@ section{
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 25%;
+  /* max-height: 25%; */
   justify-content: center;
 }
 #respect-img {
@@ -69,6 +86,7 @@ section{
   height: 35px;
 }
 #p-name-text {
+  text-transform: uppercase;
   font-family: "Big Shoulders Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
@@ -79,7 +97,7 @@ section{
   animation: glow 1.5s infinite alternate;
 }
 #greeting-container img {
-  height: 65vh;
+  height: 60vh;
   margin-left: 25px;
 }
 .img-cards{
@@ -87,6 +105,7 @@ section{
     background-size: cover;
     background-repeat: no-repeat;
     margin: 30px;
+    margin-top: 10px;
     width: 22vw;
     min-height: 38vh;
     border-radius: 35px;
@@ -131,3 +150,4 @@ header::before{
       0 0 40px #ff0099, 0 0 50px #fb35acaf, 0 0 60px #f84fb4b8, 0 0 70px #ff2fac;
   }
 }
+
